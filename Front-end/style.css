@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#searchContainer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.property {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Adicionado estilo para o botão de falar */
+button:last-child {
+    margin-left: 10px;
+    background-color: #3498db;
+}
+
+button:last-child:hover {
+    background-color: #2980b9;
+}

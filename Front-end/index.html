@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Dicionário</h1>
+
+    <div id="searchContainer">
+        <label for="word">Palavra:</label>
+        <input type="text" id="word" name="word">
+        <button onclick="searchWord()">Pesquisar</button>
+        <!-- Adicionado botão para falar a palavra -->
+        <button onclick="speakWord()">🔊 Falar</button>
+    </div>
+
+    <div id="resultContainer" class="result"></div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
