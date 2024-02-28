@@ -15,8 +15,6 @@ const firebaseConfig = {
   messagingSenderId: "655981910595",
   appId: "1:655981910595:web:5455aa22be14bd183452f6"
 };
-
-// Configure o Firebase com suas credenciais
 const serviceAccount = require('./dicioacademy-a75ff-firebase-adminsdk-l6on3-79a4065525.json');
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -31,7 +29,6 @@ app.get('/search/:word', async (req: Request, res: Response) => {
   try {
     const result = await scrapeDicio(word);
 
-    // Adicione a palavra às pesquisas recentes no Firebase
     await saveRecentSearch(word);
 
     res.json(result);
