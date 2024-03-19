@@ -133,6 +133,7 @@ async function scrapeDicio(word: string): Promise<{ word: string; meaning?: stri
       // Obtém informações adicionais, frases e antônimos
       additionalInfo = $('p.adicional:not(.sinonimo)').text().trim();
       phrases = $('div.frase').text().trim();
+      antonyms = $('div.sinonimo > ul > li > a').get().map((el) => $(el).text().trim());
       try {
         antonyms = await scrapeAntonimos(word);
       } catch (error) {
